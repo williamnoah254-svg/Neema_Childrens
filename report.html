@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report a Concern | Neema Children's Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Neema Children's Centre logo" class="brand-logo">
+        <span class="brand-name">Neema Children's Centre</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="get_involved.html">Get Involved</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+                  <li class="mobile-nav-donate"><a href="donate.html">Donate</a></li>
+        </ul>
+      </nav>
+      <a href="donate.html" class="donate-btn">Donate</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+      <div class="section-inner">
+        <h1>Report a Concern</h1>
+        <p>If you are worried about the safety or wellbeing of any child at Neema Children's Home, please tell us. All reports are treated confidentially and taken seriously.</p>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="concern-intro">
+      <div class="section-inner">
+        <h2>Speak Up. It Matters.</h2>
+        <p>Anyone can report a concern: staff, volunteers, visitors, partners, donors, neighbours, and members of the community. You do not need to be certain that harm has occurred. If something worries you, share it with us.</p>
+        <p>We take every report seriously and respond quickly. Our priority is the safety of the child, and we will take the protective action needed.</p>
+      </div>
+    </section>
+
+    <!-- EMERGENCY -->
+    <section class="concern-emergency">
+      <div class="section-inner">
+        <h2>If a Child Is in Immediate Danger</h2>
+        <p>Do not wait. Contact emergency services right away, then inform our designated safeguarding lead.</p>
+        <p><strong>Emergency services in Kenya: 999 or 112</strong></p>
+        <p>Child protection authorities and local police can also act immediately. Once the child is safe, please share the details with our safeguarding lead so we can respond internally.</p>
+      </div>
+    </section>
+
+    <!-- WHAT TO REPORT -->
+    <section class="concern-what">
+      <div class="section-inner">
+        <h2>What You Can Report</h2>
+        <p>You can report anything that concerns you about a child's safety, dignity, or wellbeing. You do not need to prove anything or have all the facts.</p>
+
+        <h3>Examples of Concerns</h3>
+        <ul>
+          <li>Physical, emotional, or sexual abuse of a child</li>
+          <li>Neglect of a child's basic needs</li>
+          <li>Unsafe or inappropriate behaviour by an adult toward a child</li>
+          <li>Violation of our safeguarding policy or code of conduct</li>
+          <li>Concerns about a child's mental health or wellbeing</li>
+          <li>Concerns about a visitor, volunteer, or staff member</li>
+          <li>Online or digital safety concerns involving a child</li>
+          <li>Any other situation that makes you worried about a child</li>
+        </ul>
+
+        <h3>What We Need From You</h3>
+        <p>When you report, share as much as you can remember: what happened, when, where, and who was involved. If you do not know, that is fine. Share what you do know, and we will follow up from there.</p>
+      </div>
+    </section>
+
+    <!-- REPORTING ROUTES -->
+    <section class="concern-routes">
+      <div class="section-inner">
+        <h2>How to Report</h2>
+        <p class="section-lead">Choose the route that works best for you. All three routes reach our designated safeguarding lead.</p>
+
+        <div class="route-grid">
+
+          <div class="route-card">
+            <h3>Report Online</h3>
+            <p>Complete the form below. It is confidential and reaches our safeguarding lead directly. You may report anonymously if you prefer.</p>
+            <span class="route-meta">Use the form on this page</span>
+            <a href="#report-form" class="btn btn-primary">Go to Form</a>
+          </div>
+
+          <div class="route-card">
+            <h3>Contact Our Safeguarding Lead</h3>
+            <p>If you would prefer to speak to someone directly, contact our designated safeguarding lead. This is the fastest route in an urgent situation that is not immediately life-threatening.</p>
+            <span class="route-meta">
+              Phone: <a href="tel:0702270566">0702 270 566</a> / <a href="tel:0711869070">0711 869 070</a><br>
+              Email: <a href="mailto:neemachildrencentermombasa@gmail.com">neemachildrencentermombasa@gmail.com</a>
+            </span>
+            <a href="contact.html?subject=safeguarding#contact-form" class="btn btn-secondary">Enquire Directly</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCERN FORM -->
+    <section class="concern-form-section" id="report-form">
+      <div class="section-inner">
+        <h2>Confidential Report Form</h2>
+        <p class="section-lead">Complete as much as you can. You may submit this form anonymously. If you provide contact details, we may follow up with you where appropriate and with your consent.</p>
+
+        <form action="form-submit.php" method="post" class="concern-form" id="concern-form">
+          <input type="hidden" name="form_type" value="report">
+          <div class="form-honeypot" aria-hidden="true"><label for="report-website">Leave this field blank<input type="text" id="report-website" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="submission-status" id="report-form-status" role="status" aria-live="polite" hidden></div>
+
+          <h3>Report Details</h3>
+          <p>Fields marked with an asterisk (*) are required. All information is handled confidentially.</p>
+
+          <!-- SECTION: ABOUT YOU -->
+          <div class="form-section">
+            <h4>About You (Optional)</h4>
+
+            <div class="form-field">
+              <label for="reporter-name">Your Name</label>
+              <input type="text" id="reporter-name" name="reporter-name" autocomplete="name">
+              <span class="form-help">You may leave this blank if you wish to remain anonymous.</span>
+            </div>
+
+            <div class="form-field">
+              <label for="reporter-email">Your Email</label>
+              <input type="email" id="reporter-email" name="reporter-email" autocomplete="email">
+            </div>
+
+            <div class="form-field">
+              <label for="reporter-phone">Your Phone Number</label>
+              <input type="tel" id="reporter-phone" name="reporter-phone" autocomplete="tel">
+            </div>
+
+            <div class="form-field">
+              <label for="relationship">Your Relationship to Neema</label>
+              <select id="relationship" name="relationship">
+                <option value="">Please choose</option>
+                <option value="community">Community Member</option>
+                <option value="visitor">Visitor</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="staff">Staff</option>
+                <option value="partner">Partner</option>
+                <option value="donor">Donor</option>
+                <option value="family">Family Member of a Child</option>
+                <option value="other">Other</option>
+                <option value="prefer-not">Prefer Not to Say</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- SECTION: ABOUT THE CONCERN -->
+          <div class="form-section">
+            <h4>About the Concern</h4>
+
+            <div class="form-field">
+              <label for="concern-type">Type of Concern *</label>
+              <select id="concern-type" name="concern-type" required>
+                <option value="">Please choose</option>
+                <option value="physical-abuse">Physical Abuse</option>
+                <option value="emotional-abuse">Emotional Abuse</option>
+                <option value="sexual-abuse">Sexual Abuse</option>
+                <option value="neglect">Neglect</option>
+                <option value="inappropriate-conduct">Inappropriate Conduct by an Adult</option>
+                <option value="policy-violation">Violation of Safeguarding Policy</option>
+                <option value="mental-health">Mental Health or Wellbeing</option>
+                <option value="online-safety">Online or Digital Safety</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="child-involved">Is the Child Currently Safe? *</label>
+              <div class="form-radio-group">
+                <label>
+                  <input type="radio" name="child-safe" value="yes" required>
+                  Yes, I believe the child is currently safe
+                </label>
+                <label>
+                  <input type="radio" name="child-safe" value="no">
+                  No, the child may be in danger right now
+                </label>
+                <label>
+                  <input type="radio" name="child-safe" value="unsure">
+                  I am not sure
+                </label>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="incident-date">When Did This Happen?</label>
+              <input type="text" id="incident-date" name="incident-date" placeholder="For example: 3 October 2026, or ongoing for two weeks">
+            </div>
+
+            <div class="form-field">
+              <label for="incident-location">Where Did This Happen?</label>
+              <input type="text" id="incident-location" name="incident-location" placeholder="For example: at the home, at school, online">
+            </div>
+
+            <div class="form-field">
+              <label for="description">Describe What Happened or What Concerns You *</label>
+              <textarea id="description" name="description" required></textarea>
+              <span class="form-help">Include as much detail as you can remember. Do not worry if your account is incomplete. Share what you know.</span>
+            </div>
+
+            <div class="form-field">
+              <label for="other-info">Anything Else We Should Know</label>
+              <textarea id="other-info" name="other-info" style="min-height: 100px;"></textarea>
+            </div>
+          </div>
+
+          <!-- SECTION: CONSENT -->
+          <div class="form-section">
+            <h4>Consent and Submission</h4>
+
+            <div class="concern-consent">
+              <input type="checkbox" id="concern-consent" name="concern-consent" required>
+              <label for="concern-consent">
+                I understand that this report will be handled confidentially and shared only with those who need to know in order to protect the child. I have read the <a href="privacy.html">Privacy Notice</a>. *
+              </label>
+            </div>
+
+            <div class="concern-consent">
+              <input type="checkbox" id="concern-contact-consent" name="concern-contact-consent">
+              <label for="concern-contact-consent">
+                I am happy for the safeguarding lead to contact me at the details I have provided, if further information is needed.
+              </label>
+            </div>
+
+            <div class="concern-form-actions">
+              <button type="submit" class="btn btn-primary">Submit Report</button>
+              <a href="safeguarding.html" class="btn btn-secondary">Back to Safeguarding</a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- WHAT HAPPENS NEXT -->
+    <section class="concern-next">
+      <div class="section-inner">
+        <h2>What Happens After You Report</h2>
+        <p>Every report follows the same process. Our priority at every step is the safety of the child.</p>
+
+        <ol>
+          <li>Your report is received by the designated safeguarding lead and reviewed promptly.</li>
+          <li>The concern is assessed on the same day or, in urgent cases, immediately.</li>
+          <li>We take protective action to keep the child safe, including involving the authorities where needed.</li>
+          <li>We coordinate with local child protection services, police, or medical professionals as appropriate.</li>
+          <li>We follow up with you where possible, respecting confidentiality and your preferences.</li>
+          <li>We record the concern and our response, in line with our safeguarding policy and legal requirements.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONFIDENTIALITY -->
+    <section class="concern-form-section">
+      <div class="section-inner">
+        <h2>Confidentiality and Protection for Reporters</h2>
+
+        <div class="concern-confidential">
+          <h3>Your Privacy Is Protected</h3>
+          <p>All reports are treated confidentially. Information is shared only with those who need to know in order to protect the child and respond appropriately. We will not disclose your identity without your consent unless required by law.</p>
+          <p>No one who reports a concern in good faith will face any negative consequences. We are committed to a culture where speaking up is encouraged, supported, and respected.</p>
+          <p>If you have questions about how we handle reports, contact us at <a href="mailto:neemachildrencentermombasa@gmail.com">neemachildrencentermombasa@gmail.com</a> or read our <a href="safeguarding.html">Safeguarding and Privacy page</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="section-inner">
+        <h2>Thank You for Speaking Up</h2>
+        <p>Every report helps us protect the children in our care. Your courage makes a difference.</p>
+        <div class="hero-buttons">
+          <a href="safeguarding.html" class="btn btn-primary">Safeguarding Policy</a>
+          <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-column footer-brand">
+        <h3>Neema Children's Home</h3>
+        <p>A community-based sanctuary providing holistic care for vulnerable children in Mikajuni, Jomvu Sub-county, Mombasa.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
+          <li><a href="get_involved.html">Get Involved</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li>Phone: <a href="tel:0702270566">0702 270 566</a> / <a href="tel:0711869070">0711 869 070</a></li>
+          <li>Email: <a href="mailto:neemachildrencentermombasa@gmail.com">neemachildrencentermombasa@gmail.com</a></li>
+          <li>Hours: Mon to Fri, 9am to 4pm</li>
+          <li>Mikajuni, Jomvu Sub-county, Mombasa, Kenya</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="safeguarding.html">Safeguarding</a></li>
+          <li><a href="privacy.html">Privacy Notice</a></li>
+          <li><a href="report.html">Report a Concern</a></li>
+        </ul>
+          <h4 class="footer-social-title">Connect with us</h4>
+          <div class="footer-social" aria-label="Social media">
+            <a class="footer-social-icon" href="https://wa.me/254702270566" aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.3ZM12.2 21.6h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 0 1-1.5-5.1c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.7 9.8Zm5.4-7.3c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.2-1.3-.8-.7-1.3-1.6-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.9-1.9-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3Z"/></svg></a>
+            <span class="footer-social-icon" role="img" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.5-1.5h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.2v3H10v8h3.5Z"/></svg>
+            </span>
+            <span class="footer-social-icon" role="img" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="footer-instagram-dot" cx="17.5" cy="6.8" r="1"/></svg>
+            </span>
+            <span class="footer-social-icon" role="img" aria-label="TikTok" title="TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 7.2a6.5 6.5 0 0 1-4.1-1.5v8.1a6.2 6.2 0 1 1-5.4-6.1v3.3a2.9 2.9 0 1 0 2.1 2.8V1.5h3.3c.2 2.6 1.8 4.7 4.1 5.5v.2Z"/></svg>
+            </span>
+          </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright 2026 Neema Children's Home. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+        const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    const header = document.querySelector('.site-header');
+
+    if (toggle && nav && header) {
+      function setMenuOpen(isOpen) {
+        nav.classList.toggle('open', isOpen);
+        header.classList.toggle('menu-open', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      }
+
+      toggle.addEventListener('click', (event) => {
+        event.stopPropagation();
+        setMenuOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!header.contains(event.target)) setMenuOpen(false);
+        if (nav.contains(event.target) && event.target.closest('a')) setMenuOpen(false);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setMenuOpen(false);
+          toggle.focus();
+        }
+      });
+    }
+  </script>
+
+
+  <script>
+    (function () {
+      const form = document.getElementById('concern-form');
+      const status = document.getElementById('report-form-status');
+      if (!form || !status) return;
+
+      function showStatus(message, isSuccess) {
+        status.hidden = false;
+        status.className = 'submission-status ' + (isSuccess ? 'is-success' : 'is-error');
+        status.textContent = message;
+      }
+
+      if (new URLSearchParams(window.location.search).get('submission') === 'sent') {
+        showStatus('Thank you. Your report has been sent directly to our safeguarding lead. If a child is in immediate danger, contact emergency services in Kenya on 999 or 112.', true);
+      }
+
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        const submitButton = form.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending report...';
+
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          const result = await response.json();
+          if (!response.ok || !result.success) throw new Error(result.message || 'Your report could not be sent. Please try again.');
+          form.reset();
+          showStatus('Thank you. Your report has been sent directly to our safeguarding lead. If a child is in immediate danger, contact emergency services in Kenya on 999 or 112.', true);
+          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } catch (error) {
+          showStatus(error.message || 'We could not send your report. Please try again or email neemachildrencentermombasa@gmail.com.', false);
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = 'Submit Report';
+        }
+      });
+    }());
+  </script>
+<script>
+  (function () {
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    document.addEventListener('pointerdown', function (event) {
+      const button = event.target.closest('button, .btn, .donate-btn, .home-button, .share-btn');
+      if (!button || reducedMotion.matches) return;
+
+      const bounds = button.getBoundingClientRect();
+      const centerX = event.clientX || bounds.left + bounds.width / 2;
+      const centerY = event.clientY || bounds.top + bounds.height / 2;
+      const sparkleColors = ['#ED1E79', '#F7BD3D', '#FFFFFF', '#3D7890'];
+
+      for (let index = 0; index < 8; index += 1) {
+        const sparkle = document.createElement('span');
+        const angle = (Math.PI * 2 * index) / 8;
+        const distance = 24 + Math.random() * 22;
+        sparkle.className = 'home-button-sparkle';
+        sparkle.setAttribute('aria-hidden', 'true');
+        sparkle.textContent = index % 2 === 0 ? '✦' : '✧';
+        sparkle.style.left = centerX + 'px';
+        sparkle.style.top = centerY + 'px';
+        sparkle.style.color = sparkleColors[index % sparkleColors.length];
+        sparkle.style.setProperty('--sparkle-x', Math.cos(angle) * distance + 'px');
+        sparkle.style.setProperty('--sparkle-y', Math.sin(angle) * distance + 'px');
+        document.body.appendChild(sparkle);
+        window.setTimeout(function () { sparkle.remove(); }, 700);
+      }
+    }, true);
+  }());
+</script>
+</body>
+</html>
